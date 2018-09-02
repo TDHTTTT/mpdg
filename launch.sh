@@ -1,0 +1,19 @@
+#!/bin/bash
+
+# ./launch.sh #runs #events/run
+
+mkdir Events Roots
+for ((i=1; i<=$1; i++));
+do
+    ./run.sh $2 $i
+    mv events.lhe.gz ./Events/events_${i}.lhe.gz
+done
+
+mkdir tmp
+cp ./process_lhef.sh ./tmp
+cd tmp
+./process_lhef.sh $1
+
+cd ../
+mv ./tmp/*.root ./Roots
+rm -rf tmp
