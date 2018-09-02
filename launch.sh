@@ -4,7 +4,7 @@
 
 tar -xzf *.tar.gz
 chmod -R 700 ./
-./madevent/compile
+./madevent/bin/compile
 
 mkdir Events Roots
 for ((i=1; i<=$1; i++));
