@@ -2,6 +2,8 @@
 
 # ./launch.sh #runs #events/run
 
+tar -xzf *.tar.gz
+chmod -R 700 ./
 mkdir Events Roots
 for ((i=1; i<=$1; i++));
 do
