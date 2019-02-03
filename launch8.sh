@@ -16,7 +16,7 @@ cd ../../
 
 for ((i=$3; i<$1+$3; i++));
 do
-    ../run.sh $2 $i
+    ./run.sh $2 $i
     mv events.lhe.gz ../Events/events_${i}.lhe.gz
 done
 
