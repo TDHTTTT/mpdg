@@ -1,7 +1,6 @@
 # mpdg
 
-Add ```run_01_gridpack.tar.gz```, from running mg5 with ```.true.  = gridpack```
-Make sure you can excute by ```chmod 700 ./launch.sh```
+Add ```run_01_gridpack.tar.gz```, from running mg5 with ```True  = gridpack```
 To customize the behavior of pythia/delphes, edit the corresponding card.
 
 ### Pythia6
@@ -15,4 +14,9 @@ Now it is ready to produce some .root files.
 To generate 100 runs with 10000 events per run, using pythia6:
 ```bash
 ./launch.sh 100 10000
+```
+
+To generate 100 runs with 10000 events per run, using pythia8 (note the $3 specifies the starting random seed which gets incremented to guarantee different seed):
+```bash
+./launch8.sh 100 10000 1
 ```
