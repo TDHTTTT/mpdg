@@ -2,7 +2,7 @@
 
 # ./process8_lhef.sh #runs #randseed_start
 
-DELPHES_DIR=/pub/daohangt/Delphes-3.4.1
+DELPHES_DIR=/c/Users/tdhttt/workspace/hep/delphes/Delphes-3.4.1/
 
 for ((i=$2; i<$1+$2; i++));
 do
