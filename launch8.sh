@@ -27,4 +27,6 @@ cd tmp
 
 cd ../
 mv ./tmp/*.root ../Roots
-#rm -rf tmp
+rm -rf tmp
+cd ..
+rm -rf Run_${3}
