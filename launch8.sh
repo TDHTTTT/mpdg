@@ -6,14 +6,14 @@ mkdir Run_${3}
 cp *.tar.gz Run_${3}
 cd Run_${3}
 tar -xzf *.tar.gz
-mv expgrid/* ./
+mv run_01_gridpack/* ./
+rm -r run_01_gridpack
 chmod -R 700 ./
 cd ./madevent/bin
 ./compile
 cd ../../
 
-#mkdir Events Roots
-
+mkdir -p ../Events ../Roots
 for ((i=$3; i<$1+$3; i++));
 do
     ./run.sh $2 $i
