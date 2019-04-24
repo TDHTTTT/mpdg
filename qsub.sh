@@ -1,7 +1,10 @@
 #!/bin/bash
 
-qsub ./para-serial.sh 20 10000 1
-qsub ./para-serial.sh 20 10000 21
-qsub ./para-serial.sh 20 10000 41
-qsub ./para-serial.sh 20 10000 61
-qsub ./para-serial.sh 20 10000 81
+#./qsub.sh start end
+#./qsub.sh 101 1000
+# 10 10000 works well on HPC (to avoid getting migrated)
+
+for ((i=$1; i<$2; i+=10));
+do
+    qsub ./para-serial.sh 10 10000 $i
+done
