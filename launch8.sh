@@ -2,12 +2,14 @@
 
 # ./launch.sh #runs #events/run #randseed_start
 
+source ./init.sh
 mkdir Run_${3}
 cp *.tar.gz Run_${3}
 cd Run_${3}
 tar -xzf *.tar.gz
-mv run_01_gridpack/* ./
-rm -r run_01_gridpack
+# don't need by default
+#mv run_01_gridpack/* ./
+#rm -r run_01_gridpack
 chmod -R 700 ./
 cd ./madevent/bin
 ./compile
@@ -27,4 +29,6 @@ cd tmp
 
 cd ../
 mv ./tmp/*.root ../Roots
-#rm -rf tmp
+rm -rf tmp
+cd ..
+rm -rf Run_${3}
