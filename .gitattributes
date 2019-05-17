@@ -1,0 +1,3 @@
+*.tcl linguist-vendored
+*.cmnd linguist-vendored
+*.dat linguist-vendored
