@@ -2,6 +2,9 @@
 
 # ./process8_lhef.sh #runs #randseed_start
 
+# Based on Kevin Bauer https://github.com/kevbauer/pythia_delphes_scripts/tree/master,
+# which seems to be based on https://github.com/cshimmin/delphes-pilot
+
 
 for ((i=$2; i<$1+$2; i++));
 do
