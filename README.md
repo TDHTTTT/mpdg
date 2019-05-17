@@ -2,12 +2,13 @@
 
 Running Madgraph5 + Pythia8 + Delphes4 with gridpack support, optimized to run on cluster.   
 
-To customize the behavior of Pythia/Delphes, edit the corresponding card in `Cards/`
+To customize the behavior of Pythia/Delphes, edit the corresponding card in `Cards/`.  
 
 ## Prerequisite
 
-Add `run_01_gridpack.tar.gz`, from running [madgraph5 with gridpack][mg-grid] `True = gridpack`. Note this step can be completed either locally or on the cluster.  
-Add your delphes directory in `init.sh` and do `source ./init.sh`.  
++ Install Madgraph5 + Pythia8 + Delphes4 separately with [`DelphesPythia8`][dp8-url] built.
++ Add `run_01_gridpack.tar.gz`, from running [madgraph5 with gridpack][mg-grid] `True = gridpack`. Note this step can be completed either locally or on the cluster.  
++ Add your delphes directory in `init.sh` and do `source ./init.sh`.  
 
 ## Running locally
 
@@ -43,3 +44,4 @@ You will get
 
 
 [mg-grid]: https://cp3.irmp.ucl.ac.be/projects/madgraph/wiki/IntroGrid/
+[dp8-url]: https://cp3.irmp.ucl.ac.be/projects/delphes/wiki/WorkBook/Pythia8/ 
