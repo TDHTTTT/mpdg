@@ -2,7 +2,6 @@
 
 # ./launch.sh #runs #events/run #randseed_start
 
-cd ..
 source ./init.sh
 mkdir Run_${3}
 cp *.tar.gz Run_${3}

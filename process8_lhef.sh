@@ -2,7 +2,6 @@
 
 # ./process8_lhef.sh #runs #randseed_start
 
-DELPHES_DIR=/pub/daohangt/Delphes-3.4.1
 
 for ((i=$2; i<$1+$2; i++));
 do
@@ -26,7 +25,7 @@ do
         fi
     fi
 
-    $DELPHES_DIR/DelphesPythia8 ../../Cards/delphes_card.tcl ../../Cards/configLHE.cmnd delphes_${i}.root
+    $DELPHES/DelphesPythia8 ../../Cards/delphes_card.tcl ../../Cards/configLHE.cmnd delphes_${i}.root
     delphes_code=$?
     if [ $delphes_code -ne 0 ]; then
         echo "Delphes returned error! Code=$delphes_code" >&2
