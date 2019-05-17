@@ -18,16 +18,28 @@ To generate 100 runs with 10000 events per run, with the seed for the first run 
 ```
 
 ## Running on HPC
-Some wrapping scripts are provided to execute the code on UCI's HPC making the submission and execution of the simulation jobs easier and faster. The core idea to be faster is to submit lots of small jobs so that those jobs can run in parallel. On HPC, a tested combination is `10 runs x 10000 events/run per node`, which should be well within the CPU timing wall. Also, to keep track of the simulation, the seed is being used as the identifier of the events.  
+Some wrapping scripts are provided to execute `launch8.sh` on UCI's HPC making the simulation jobs faster. The core idea to be faster is to submit lots of small jobs so that those jobs can run in parallel. On HPC, a tested combination is `10 runs x 10000 events/run per node`, which should be well within the CPU timing wall. Also, to keep track of the simulation, the seed is being used as the identifier of the events.  
 
 To submit 10 jobs with 1 as the first seed and 100 as the last one:
 
 ```bash
+cd hpc
 ./qsub.sh 1 100
 ```
 
 ## Running with docker
 Work in progress  
+
+
+## When it finishes
+You will get
+
+```bash
+├ Events
+│   └ events_seed#.lhe.gz
+└ Roots
+    └ delphes_seed#.root
+```
 
 
 [mg-grid]: https://cp3.irmp.ucl.ac.be/projects/madgraph/wiki/IntroGrid/
