@@ -1,5 +1,5 @@
 #!/bin/bash
-#$ -N <NAME-OF-THE-JOB>
+#$ -N NAME-OF-THE-JOB
 #$ -ckpt restart
 #$ -q free*
 #$ -pe openmp 4
