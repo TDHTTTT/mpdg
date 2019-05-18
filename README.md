@@ -1,6 +1,6 @@
 # mpdg
 
-Running Madgraph5 + Pythia8 + Delphes4 with gridpack support, optimized to run on cluster.   
+Running Madgraph5 + Pythia8 + Delphes3 with gridpack support, optimized to run on cluster.   
 
 To customize the behavior of Pythia/Delphes, edit the corresponding card in `Cards/`.  
 
